@@ -10,44 +10,35 @@
     font-family: 'Inter', serif;
 }
 
-body{
+.bg-color{
     height: 100vh;
     background: radial-gradient(circle at center, #701DBD, #2F184B)}
     
 
 /* ----------------- NAVBAR ----------------- */
 .navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     height: 10%;
-    padding: 0 5%;
 }
 
 .navbar ul{
     display: flex;
-    gap: 15%;
-    margin: 0 auto;
-    
+    gap: 15%;    
 }
 
-.navbar ul li{
-    list-style: none;
-}
 
 .navbar ul li a{
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 16px;
     margin-right: 5vh;
 }
   
 .navbar img{
-    width: 5%;
+    width: 25%;
     height: auto;
-    padding-top: 1.5%;
-        
+    padding-top: 1.5%;        
+    padding-right: 10px;
 }
 
 .navbar ul li a:hover{
@@ -63,7 +54,7 @@ body{
     align-items: left;
     flex-direction: column;
     justify-content: center;
-    height: 65%;
+    height: 60%;
     padding: 0 5%;
 }
 
@@ -78,13 +69,13 @@ body{
     font-size: 50px;
     font-weight: 600;
     font-weight: bold;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .welcome p.subtitle{
     color: #fff;
     display: flex;
-    margin-top: 4%;
+    margin-top: 0.5%;
 }
 
 /* ----------------- WELCOME ----------------- */
@@ -101,6 +92,7 @@ h4{
     flex-direction: column;
     align-items: center;
     background-color: #fff;
+    padding: 0;
 }
 
 /* ----------------- ABOUT ----------------- */
@@ -113,7 +105,7 @@ h4{
     grid-template-columns: 1fr 1fr;
     align-items: start;
     background-color: #fff;
-    padding: 5% 5%;
+    padding: 2% 2%;
 }
 
 .trajetoria-titulo{
@@ -154,7 +146,7 @@ h4{
 /* ----------------- HABILIDADES ----------------- */
 
 .habilidades{
-    width: 80%;
+    width: 100%;
     padding: 2%;
     margin: 5%;
     line-height: 4vh;
