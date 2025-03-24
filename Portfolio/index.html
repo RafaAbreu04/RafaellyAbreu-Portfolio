@@ -10,7 +10,7 @@
 
 </head>
 <body class="bg-color">
-    <div class="container-xxl ">
+    <!-- <div class="container-xxl ">
         <div class="row gx-5 align-items-center justify-content-between">
             <div class="col-sm-3 navbar">
             <img src="Group 1.png" alt="" class="img-fluid. max-width: 100% ms-4">      
@@ -24,15 +24,48 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    
+    <nav class="navbar navbar-expand-lg navbar-custom" id="Inicio">
+        <div class="container-xxl">
+            <!-- Logo -->
+            <a class="navbar-brand ms-3" href="#">
+                <img src="Group 1.png" alt="Logo" class="img-fluid">
+            </a>
+    
+            <!-- Botão Hamburguer -->
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Itens do Menu -->
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
     <div class="container-fluid welcome bg-transparent ms-5">
         <h1>Olá, eu sou</h1>
         <p class="title">Rafaelly Abreu</p>
         <p class="subtitle">Sou Programadora e Desenvolvedora de Jogos</p>
-    </div>
+    </div> 
 
-    <div class="container-fluid bg-white p-2 ">
+    <div class="container-fluid bg-white p-2 " id="Sobre">
         <div class="container justify-content-center">
             <h2>Sobre<br></h2>
         <p class="">A seguir, algumas informações acerca das minhas habilidades e trajetória.</p>
@@ -47,7 +80,7 @@
                 <p class="trajetoria-content">Estou cursando o último ano do Bacharelado de Jogos Digitais e busco estágio na área de TI ou de Gestão de Projetos.
                 Sou Jovem Aprendiz em Varejo no Grupo DPSP desde dezembro de 2023, tenho experiência com atendimento ao cliente, organização de produtos, estoque e verificação de validade.
                 </p>
-                <Button class="button"> Download CV </Button>
+                <Button class="btn-block button"> Download CV </Button>
     
             </div>  
             <div class="habilidades">
@@ -70,12 +103,41 @@
     </div>
     
 
-    <div class="container-fluid projetos-container p-2">
-        <h3>Projetos</h3>                 
-            
+    <div class="container-fluid projetos-container p-2" id="Projetos">
+        <h3>Projetos</h3> 
+        
+        <div id="carouselContainer">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://arcade4studio.itch.io/earth-invaders" target="_blank">
+                            <img src="https://img.itch.zone/aW1nLzE0MjQzOTY0LnBuZw==/315x250%23c/BsQOzu.png" class="d-block w-100" alt="Earth Invaders">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://gak2004.itch.io/kauanes-ethereal-dream" target="_blank">
+                            <img src="https://img.itch.zone/aW1nLzE2ODEzMDE2LnBuZw==/original/WOd3Pf.png" class="d-block w-100" alt="Kauane's">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://arcade4studio.itch.io/grinchs-haunt" target="_blank">
+                            <img src="https://img.itch.zone/aW1hZ2UvMzIwMjcyOS8xOTEyMjYyMy5wbmc=/347x500/Bvz9qQ.png" class="d-block w-100" alt="Grinch's">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
     </div>
     
-    <footer class=" container-fluid footer-page">
+    <footer class=" container-fluid footer-page" id="Contato">
         <p class="footer-title">Me siga nas redes sociais!</p>
         <div class="social-media">
             <a href="https://www.linkedin.com/in/rafaelly-abreu/" target="_blank">
