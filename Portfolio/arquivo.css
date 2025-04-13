@@ -50,34 +50,74 @@
     
 /* ----------------- WELCOME ----------------- */
 
-.welcome{
-    display: flex;
-    align-items: left;
-    flex-direction: column;
-    justify-content: center;
-    height: 60%;
-    padding: 0 5%;
-}
-
-.welcome h1{
+.welcome {
+    min-height: 50vh;
+  }
+  
+  .welcome-text {
+    flex: 1 1 300px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  
+  .welcome-text h1 {
     font-family: "Train One", serif;
     font-size: 40px;
     color: #fff;
-}
-
-.welcome p.title{
+  }
+  
+  .welcome-text .title {
     color: #fff;
     font-size: 50px;
-    font-weight: 600;
     font-weight: bold;
     margin-top: 1%;
-}
-
-.welcome p.subtitle{
+  }
+  
+  .welcome-text .subtitle {
     color: #fff;
-    display: flex;
     margin-top: 0.5%;
-}
+  }
+  
+  .welcome-img {
+    flex: 1 1 300px; /* antes era 0 1 200px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding-right: 5%; /* adiciona respiro da borda */
+  }
+  
+  .profile-img {
+    width: 18vw;
+    aspect-ratio: 1 / 1;         /* Mantém proporção 1:1 (quadrado perfeito) */
+    max-width: 250px;
+    min-width: 120px;
+    object-fit: cover;           /* Preenche o quadrado sem distorcer */
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .welcome {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .welcome-text {
+      margin-right: 0;
+    }
+  
+    .welcome-img {
+      margin-top: 2rem;
+    }
+  
+    .profile-img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
+  
 
 /* ----------------- WELCOME ----------------- */
 
@@ -126,18 +166,24 @@ h2{
     text-align: justify;
 }
 
-.button{
-    background-color: #651C81;
-    outline: none;
+.button {
+    background: linear-gradient(to bottom, #651C81, #8E2DE2); /* Gradiente roxo */
     color: #fff;
     font-weight: bold;
     font-size: 15px;
-    margin-top: 5%;    
-}
-
-.button:hover{
-    background-color: #dd27ee;
-}
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #000;      /* Borda preta fina */
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4); /* Sombra leve */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: linear-gradient(to bottom, #8E2DE2, #651C81); /* Inverte gradiente no hover */
+    transform: scale(1.05); /* Efeito de zoom suave */
+  } 
 
 /* ----------------- TRAJETÓRIA ----------------- */
 
