@@ -21,7 +21,7 @@
 }
 
 .navbar-brand img {
-    width: 80px; /* Ajuste do tamanho do logo */
+    width: 80px; 
     height: auto;
 }
 
@@ -79,20 +79,20 @@
   }
   
   .welcome-img {
-    flex: 1 1 300px; /* antes era 0 1 200px */
+    flex: 1 1 300px; 
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    padding-right: 5%; /* adiciona respiro da borda */
+    padding-right: 5%; 
   }
   
   .profile-img {
     width: 18vw;
-    aspect-ratio: 1 / 1;         /* Mantém proporção 1:1 (quadrado perfeito) */
+    aspect-ratio: 1 / 1;         
     max-width: 250px;
     min-width: 120px;
-    object-fit: cover;           /* Preenche o quadrado sem distorcer */
+    object-fit: cover;           
     border-radius: 50%;
   }
   
@@ -167,22 +167,22 @@ h2{
 }
 
 .button {
-    background: linear-gradient(to bottom, #651C81, #8E2DE2); /* Gradiente roxo */
+    background: linear-gradient(to bottom, #651C81, #8E2DE2); 
     color: #fff;
     font-weight: bold;
     font-size: 15px;
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    border: 1px solid #000;      /* Borda preta fina */
+    border: 1px solid #000;   
     border-radius: 4px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.4); /* Sombra leve */
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .button:hover {
-    background-color: linear-gradient(to bottom, #8E2DE2, #651C81); /* Inverte gradiente no hover */
-    transform: scale(1.05); /* Efeito de zoom suave */
+    background-color: linear-gradient(to bottom, #8E2DE2, #651C81); 
+    transform: scale(1.05); 
   } 
 
 /* ----------------- TRAJETÓRIA ----------------- */
@@ -224,29 +224,74 @@ h3{
     margin: 2%;
 }
 
-.projetos-container{
-    text-align: center;
+.projetos-container {
+    text-align: center; 
     color: #fff;
-    height: 70vh;
+    padding: 4rem 1rem; 
+    background-color: transparent;
 }
 
-#carouselContainer {
-    max-width: 800px;
-    margin: auto;
-}
-.carousel img {
-    max-height: 400px;
-    object-fit: cover;
+.projetos-container .card {
+    border: none; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    overflow: hidden; 
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+.projetos-container .card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
-.carousel-caption{
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
+.projetos-container .card img.card-img-top {
+    border-bottom: 1px solid #6c757d; 
+}
+
+.projetos-container .card-body {
+    text-align: left; 
+    display: flex; 
+    flex-direction: column; 
+    flex-grow: 1; 
+}
+
+.projetos-container .card-title {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #adb5bd; 
+}
+
+.projetos-container .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 1rem; 
+    flex-grow: 1; 
+    color: #ced4da; 
+}
+
+.projetos-container .card .btn {    
+    background: linear-gradient(to bottom, #651C81, #8E2DE2); 
+    color: #fff !important; 
+    font-weight: bold;     
+    border: 1px solid #000; 
+    border-radius: 4px;  
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4); 
+    transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+
+    text-decoration: none;  
+    text-align: center; 
+    cursor: pointer;   
+}
+
+.projetos-container .card .btn:hover {
+    background: linear-gradient(to bottom, #7b2cbf, #7a3ab3); 
+    color: #fff !important; 
+    border-color: #111; 
+    transform: scale(1.05); 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); 
+}
+
+.projetos-container .card .btn:active {
+    transform: scale(0.98);
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+    background: linear-gradient(to top, #651C81, #8E2DE2); 
 }
 
 /* ----------------- PROJETOS ----------------- */
